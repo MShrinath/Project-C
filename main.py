@@ -107,8 +107,3 @@ def save_results_to_json(results, file_name):
 # Example usage
 if __name__ == "__main__":
     scan_website("https://www.example.com")
-
-    # Credits
-    print("\n#############################################")
-    print("Script by: Mejbaur Bahar Fagun")
-    print("#############################################")
