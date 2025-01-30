@@ -52,14 +52,20 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**:
+   ``` bash
    git clone https://github.com/yourusername/Project-C.git
    cd Project-C
+   ```
 
 2.**Install dependencies**:
-  pip install -r requirements.txt
+   ``` bash
+   pip install -r requirements.txt
+   ``` 
 
 3.**Run the scanner**:
+   ``` bash
    python scanner.py
+   ```
 
 
 4. **Open a pull request** on GitHub.
