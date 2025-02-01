@@ -68,7 +68,7 @@ Ensure you have the following installed:
    ```
 
 
-4. **Open a pull request** on GitHub.
+4.**Open a pull request** on GitHub.
 
 Feel free to also open issues with suggestions or enhancements.
 
