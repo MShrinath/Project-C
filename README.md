@@ -82,4 +82,4 @@ Distributed under the MIT License. See the full license [here](https://opensourc
 
 ## 📞 Contact
 
-Project Link: [https://github.com/k-shaik/Prokect-C](https://github.com/k-shaik/Prokect-C)
+Project Link: [https://github.com/k-shaik/Prokect-C](https://github.com/k-shaik/Project-C)
