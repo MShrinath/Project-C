@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Vulnerability Report</title>
+    <style>
+        body { 
+            font-family: 'Courier New', monospace; 
+            background-color: #0f0f0f; 
+            color: #00ff00; 
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #121212;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ff00;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #00ff00;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #00ff00;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #002200;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .vulnerable {
+            color: red;
+            font-weight: bold;
+        }
+        .safe {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Vulnerability Report</h1>
+        <h2>Scanned Website: {{ website_url }}</h2>
+        
+        <table>
+            <tr>
+                <th>#</th>
+                <th>URL</th>
+                <th>Vulnerabilities</th>
+            </tr>
+            {% for result in results %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td><a href="{{ result.url }}" target="_blank">{{ result.url }}</a></td>
+                <td>
+                    {% if result.vulnerabilities != "No vulnerabilities found" %}
+                        <ul>
+                            {% for vuln, description in result.vulnerabilities.items() %}
+                                <li class="vulnerable">{{ vuln }} - {{ description }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <span class="safe">No vulnerabilities found</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

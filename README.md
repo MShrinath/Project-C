@@ -51,18 +51,24 @@ Ensure you have the following installed:
 
 ### Installation
 
-1. **Clone the repository**:
-   git clone https://github.com/yourusername/Project-C.git
+1.**Clone the repository**:
+   ``` bash
+   git clone https://github.com/k-shaik/Project-C.git
    cd Project-C
+   ```
 
 2.**Install dependencies**:
-  pip install -r requirements.txt
+   ``` bash
+   pip install -r requirements.txt
+   ``` 
 
 3.**Run the scanner**:
+   ``` bash
    python scanner.py
+   ```
 
 
-4. **Open a pull request** on GitHub.
+4.**Open a pull request** on GitHub.
 
 Feel free to also open issues with suggestions or enhancements.
 
@@ -76,4 +82,4 @@ Distributed under the MIT License. See the full license [here](https://opensourc
 
 ## 📞 Contact
 
-Project Link: [https://github.com/k-shaik/INOSKL-24](https://github.com/k-shaik/Prokect-C)
+Project Link: [https://github.com/k-shaik/Prokect-C](https://github.com/k-shaik/Prokect-C)
